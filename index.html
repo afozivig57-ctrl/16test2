@@ -8,10 +8,10 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232563eb'/%3E%3Cpath d='M18 42V22h7v14h21v6H18Z' fill='white'/%3E%3C/svg%3E">
   <style>
     :root {
-      color-scheme: light;
+      color-scheme: dark;
       font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
-      background: #f6f9ff;
-      color: #16365f;
+      background: #070b14;
+      color: #ffffff;
     }
 
     * {
@@ -25,49 +25,49 @@
       place-items: center;
       padding: 24px;
       background:
-        radial-gradient(circle at 15% 20%, #dbeafe 0, transparent 30%),
-        radial-gradient(circle at 85% 80%, #e0edff 0, transparent 28%),
-        #f8fbff;
+        radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.22) 0, transparent 32%),
+        radial-gradient(circle at 85% 80%, rgba(29, 78, 216, 0.14) 0, transparent 30%),
+        #070b14;
     }
 
     main {
-      width: min(680px, 100%);
+      width: min(760px, 100%);
       padding: clamp(40px, 8vw, 72px);
       text-align: center;
-      background: rgba(255, 255, 255, 0.9);
-      border: 1px solid #dbeafe;
+      background: rgba(13, 20, 34, 0.92);
+      border: 1px solid #24344e;
       border-radius: 24px;
-      box-shadow: 0 24px 60px rgba(37, 99, 235, 0.12);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
     }
 
     .label {
       display: inline-block;
       margin-bottom: 22px;
       padding: 7px 14px;
-      color: #2563eb;
+      color: #93c5fd;
       font-size: 0.875rem;
       font-weight: 700;
       letter-spacing: 0.12em;
-      background: #eff6ff;
+      background: rgba(37, 99, 235, 0.18);
       border-radius: 999px;
     }
 
     h1 {
       margin: 0;
-      color: #0f2f57;
+      color: #ffffff;
       font-size: clamp(2.5rem, 9vw, 4.75rem);
       line-height: 1.08;
       letter-spacing: -0.04em;
     }
 
     .name {
-      color: #2563eb;
+      color: #60a5fa;
     }
 
     .intro {
       max-width: 500px;
       margin: 26px auto 0;
-      color: #527092;
+      color: #c3cfdf;
       font-size: clamp(1rem, 2.5vw, 1.2rem);
       line-height: 1.9;
     }
@@ -80,10 +80,61 @@
       border-radius: 999px;
     }
 
+    .resume {
+      margin-top: 34px;
+      padding-top: 30px;
+      text-align: left;
+      border-top: 1px solid #2b3a52;
+    }
+
+    .resume h2 {
+      margin: 0 0 20px;
+      color: #ffffff;
+      font-size: 1.35rem;
+      text-align: center;
+    }
+
+    .resume-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .resume-item {
+      padding: 18px;
+      background: #111b2d;
+      border: 1px solid #293b59;
+      border-radius: 16px;
+    }
+
+    .resume-item h3 {
+      margin: 0 0 8px;
+      color: #93c5fd;
+      font-size: 0.95rem;
+    }
+
+    .resume-item p {
+      margin: 0;
+      color: #f8fafc;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .resume-item span {
+      display: block;
+      margin-top: 3px;
+      color: #9eacc0;
+      font-size: 0.9rem;
+    }
+
     @media (max-width: 480px) {
       main {
         padding: 42px 24px;
         border-radius: 20px;
+      }
+
+      .resume-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -94,6 +145,29 @@
     <h1>你好，我是<br><span class="name">林知远</span></h1>
     <p class="intro">我喜欢把复杂的想法变得简单，也享受在学习、创造与生活之间发现新的可能。</p>
     <div class="line" aria-hidden="true"></div>
+    <section class="resume" aria-labelledby="resume-title">
+      <h2 id="resume-title">个人简历</h2>
+      <div class="resume-grid">
+        <article class="resume-item">
+          <h3>职业方向</h3>
+          <p>产品设计与前端体验</p>
+        </article>
+        <article class="resume-item">
+          <h3>工作经历</h3>
+          <p>星河科技 · 产品设计师</p>
+          <span>2023 年至今</span>
+        </article>
+        <article class="resume-item">
+          <h3>教育经历</h3>
+          <p>数字媒体艺术专业</p>
+          <span>2019—2023 年</span>
+        </article>
+        <article class="resume-item">
+          <h3>专业技能</h3>
+          <p>界面设计、原型制作、内容策划</p>
+        </article>
+      </div>
+    </section>
   </main>
 </body>
 </html>
