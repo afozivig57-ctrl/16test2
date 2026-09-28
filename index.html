@@ -10,7 +10,7 @@
     :root {
       color-scheme: light;
       font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
-      background: #fff3ef;
+      background: #f6f9ff;
       color: #16365f;
     }
 
@@ -25,9 +25,9 @@
       place-items: center;
       padding: 24px;
       background:
-        radial-gradient(circle at 15% 20%, #ffdcd3 0, transparent 32%),
-        radial-gradient(circle at 85% 80%, #ffe1e8 0, transparent 30%),
-        #fff3ef;
+        radial-gradient(circle at 15% 20%, #dbeafe 0, transparent 30%),
+        radial-gradient(circle at 85% 80%, #e0edff 0, transparent 28%),
+        #f8fbff;
     }
 
     main {
@@ -35,9 +35,9 @@
       padding: clamp(40px, 8vw, 72px);
       text-align: center;
       background: rgba(255, 255, 255, 0.9);
-      border: 1px solid #f8d7d0;
+      border: 1px solid #dbeafe;
       border-radius: 24px;
-      box-shadow: 0 24px 60px rgba(190, 90, 80, 0.14);
+      box-shadow: 0 24px 60px rgba(37, 99, 235, 0.12);
     }
 
     .label {
@@ -80,45 +80,10 @@
       border-radius: 999px;
     }
 
-    .hobbies {
-      margin-top: 30px;
-      padding-top: 26px;
-      border-top: 1px solid #f3d5d0;
-    }
-
-    .hobbies h2 {
-      margin: 0 0 18px;
-      color: #0f2f57;
-      font-size: 1.15rem;
-    }
-
-    .hobby-list {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .hobby-list li {
-      padding: 13px 10px;
-      color: #31577e;
-      font-size: 1rem;
-      font-weight: 600;
-      background: #fff8f6;
-      border: 1px solid #f8ddd7;
-      border-radius: 14px;
-    }
-
     @media (max-width: 480px) {
       main {
         padding: 42px 24px;
         border-radius: 20px;
-      }
-
-      .hobby-list {
-        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -129,14 +94,6 @@
     <h1>你好，我是<br><span class="name">林知远</span></h1>
     <p class="intro">我喜欢把复杂的想法变得简单，也享受在学习、创造与生活之间发现新的可能。</p>
     <div class="line" aria-hidden="true"></div>
-    <section class="hobbies" aria-labelledby="hobbies-title">
-      <h2 id="hobbies-title">我的爱好</h2>
-      <ul class="hobby-list">
-        <li>阅读</li>
-        <li>摄影</li>
-        <li>徒步</li>
-      </ul>
-    </section>
   </main>
 </body>
 </html>
